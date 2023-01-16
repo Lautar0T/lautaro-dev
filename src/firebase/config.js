@@ -22,3 +22,4 @@ const analytics = getAnalytics(app);
 export default function getfirebase() {
     return app;
 }
+export { analytics };
