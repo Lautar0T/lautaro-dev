@@ -16,7 +16,7 @@ function App() {
   }
   return (
     <div id='app' className="text-slate-200 flex-col min-w-screen">
-      <header className='w-full flex justify-between md:justify-evenly md:grid md:grid-cols-4 px-4 h-[10dvh] z-40 items-center fixed top-0'>
+      <header className='w-full flex justify-between lg:justify-evenly lg:grid lgwwwwwwww:grid-cols-4 px-4 h-[10dvh] z-40 items-center fixed top-0'>
         <span className={isMenuOpen ? 'brand brand-MActive' : 'brand'}>
           <p className='inicial'>L</p>
           <p className={isMenuOpen ? 'animate__animated animate__fadeInLeft' : ' animate__animated animate__fadeOutLeft'}>autaro</p>
