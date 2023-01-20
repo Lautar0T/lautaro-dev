@@ -12,8 +12,8 @@ const firebaseConfig = {
     projectId: "portfolio-lautaro",
     storageBucket: "portfolio-lautaro.appspot.com",
     messagingSenderId: "538576716362",
-    appId: "1:538576716362:web:870d35f54d40f1e1eb5cb3",
-    measurementId: "G-J465KZ80D4",
+    appId: "1:538576716362:web:4b23e3ac554a78c2eb5cb3",
+    measurementId: "G-K3RLB7TH53",
 };
 
 // Initialize Firebase
