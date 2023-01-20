@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import App from './components/App';
 import { BrowserRouter } from 'react-router-dom';
-import getFirebase from './Firebase/config';
+import getFirebase from './firebase/config';
 
 getFirebase();
 const root = ReactDOM.createRoot(document.getElementById('root'));
