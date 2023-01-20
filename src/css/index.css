@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+header {
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.25);
+  background-color: #1a1a1a;
+}
+
+.brand {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  overflow: hidden;
+}
+.brand .inicial {
+  z-index: 1;
+}
+
+.brand-MActive {
+  pointer-events: none;
+  transition: all 1s;
+}
+
+.navbar-Mobile {
+  background-color: #1f1f1f;
+  font-weight: 600;
+  padding: 1rem 0;
+  position: fixed;
+  top: 9dvh;
+  right: -60dvw;
+  width: 60dvw;
+  height: 91dvh;
+  transition: all 1s ease-in-out;
+}
+.navbar-Mobile ul {
+  font-spacing: 0.1rem;
+  display: grid;
+  align-items: evenly;
+  justify-items: center;
+}
+.navbar-Mobile .nav-link {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.navbar-Mobile-active {
+  right: 0;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: "Brother 1816", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: slate;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.App-Container {
+  position: relative;
+  overflow: hidden;
+  top: 10dvh;
+  right: 0;
+  transition: all 1s ease-in-out;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.25);
+  background-color: #1a1a1a;
+}
+
+.App-Container-MActive {
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.25);
+  top: 10dvh;
+  position: relative;
+  overflow: hidden;
+  right: 60dvw;
+  transition: all 1s ease-in-out;
+}/*# sourceMappingURL=index.css.map */
