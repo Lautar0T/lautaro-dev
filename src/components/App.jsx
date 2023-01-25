@@ -4,22 +4,35 @@ import NavBar from './NavBar';
 import Cv from './Cv';
 import About from './About';
 import { HiBars2, HiChevronDoubleRight } from "react-icons/hi2";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NavMobile from './NavMobile';
+import Loader from './Loader';
 
+// delay the class change to see the animation
 
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
   const handleClick = () => {
     setIsMenuOpen(!isMenuOpen);
-  }
+  };
   return (
     <div id='app' className="text-slate-200 flex-col min-w-screen">
       <header className='w-full flex justify-between  md:grid md:grid-cols-4 px-4 h-[10dvh] z-40 items-center fixed top-0'>
         <span className={isMenuOpen ? 'brand brand-MActive' : 'brand'}>
           <p className='inicial'>L</p>
-          <p className={isMenuOpen ? 'animate__animated animate__fadeInLeft' : ' animate__animated animate__fadeOutLeft'}>autaro</p>
+          <p className={'endBrand'}>autaro</p>
         </span>
         <NavBar />
         <button className="md:hidden animate-pulse" onClick={handleClick}><HiBars2 className={(isMenuOpen ? 'hidden' : 'text-3xl')} /><HiChevronDoubleRight className={(!isMenuOpen ? 'hidden' : 'text-3xl')} /></button>
@@ -40,5 +53,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

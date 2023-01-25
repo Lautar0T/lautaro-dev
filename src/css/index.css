@@ -54,6 +54,10 @@ header {
   transition: all 1s ease-in-out;
 }
 
+.loader {
+  background-color: #1a1a1a;
+}
+
 body {
   background-color: #1a1a1a;
   font-family: "Brother 1816", sans-serif;
