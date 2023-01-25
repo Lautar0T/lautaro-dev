@@ -29,13 +29,13 @@ function App() {
   };
   return (
     <div id='app' className="text-slate-200 flex-col min-w-screen">
-      <header className='w-full flex justify-between  md:grid md:grid-cols-4 px-4 h-[10dvh] z-40 items-center fixed top-0'>
+      <header className='w-full flex justify-between  lg:grid lg:grid-cols-4 px-4 h-[10dvh] z-40 items-center fixed top-0'>
         <span className={isMenuOpen ? 'brand brand-MActive' : 'brand'}>
           <p className='inicial'>L</p>
           <p className={'endBrand'}>autaro</p>
         </span>
         <NavBar />
-        <button className="md:hidden animate-pulse" onClick={handleClick}><HiBars2 className={(isMenuOpen ? 'hidden' : 'text-3xl')} /><HiChevronDoubleRight className={(!isMenuOpen ? 'hidden' : 'text-3xl')} /></button>
+        <button className="lg:hidden animate-pulse" onClick={handleClick}><HiBars2 className={(isMenuOpen ? 'hidden' : 'text-3xl')} /><HiChevronDoubleRight className={(!isMenuOpen ? 'hidden' : 'text-3xl')} /></button>
       </header>
       <NavMobile isOpen={isMenuOpen} handleClick={handleClick} />
       <div className={isMenuOpen ? 'App-Container App-Container-MActive' : 'App-Container'}>
