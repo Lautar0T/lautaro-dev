@@ -7,6 +7,7 @@ import { HiBars2, HiChevronDoubleRight } from "react-icons/hi2";
 import { useEffect, useState } from 'react';
 import NavMobile from './NavMobile';
 import Loader from './Loader';
+import Footer from './Footer';
 
 // delay the class change to see the animation
 
@@ -47,7 +48,7 @@ function App() {
           </Routes>
         </main>
         <footer className='h-[10dvh] relative bottom-0 px-4 items-center  flex'>
-          <p>Este es el Footer</p>
+          <Footer></Footer>
         </footer>
       </div>
     </div>
