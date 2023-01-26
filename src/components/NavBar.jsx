@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 const NavBar = () => {
     return (
         <nav className="col-span-2 col-start-3">
-            <ul className="hidden md:flex justify-evenly">
+            <ul className="hidden lg:flex justify-evenly">
                 <NavLink to={"/"} className={({isActive}) => isActive ? " navLink-Active":"navLink"} >Home</NavLink>
                 <NavLink to={"/about"} className={({isActive}) => isActive ? " navLink-Active":"navLink"}>About</NavLink>
                 <NavLink to={"/contact"} className={({isActive}) => isActive ? " navLink-Active":"navLink"}>Contact</NavLink>

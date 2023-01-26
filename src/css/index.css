@@ -13,6 +13,7 @@ header {
   transition: all 1s;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.1rem;
   overflow: hidden;
 }
@@ -36,13 +37,15 @@ header {
   height: 91dvh;
   transition: all 1s ease-in-out;
 }
-.navbar-Mobile ul {
+
+ul {
   font-spacing: 0.1rem;
   display: grid;
   align-items: evenly;
   justify-items: center;
 }
-.navbar-Mobile .nav-link {
+
+.nav-link {
   font-size: 1.5rem;
   margin: 1rem 0;
   text-decoration: none;
