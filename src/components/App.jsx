@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import NavMobile from './NavMobile';
 import Loader from './Loader';
 import Footer from './Footer';
+import Page404 from './Page404';
 
 // delay the class change to see the animation
 
@@ -40,8 +41,9 @@ function App() {
       </header>
       <NavMobile isOpen={isMenuOpen} handleClick={handleClick} />
       <div className={isMenuOpen ? 'App-Container App-Container-MActive' : 'App-Container'}>
-        <main className='grid grid-cols-12 min-h-[80dvh] pt-4'>
+        <main className='grid min-h-[80dvh] pt-4 place-items-center'>
           <Routes>
+            <Route path="*" element={<Page404/>} />
             <Route path="/" element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path="/Curriculum_Vitae" element={<Cv />} />
