@@ -10,12 +10,12 @@ import Loader from './Loader';
 import Footer from './Footer';
 import Page404 from './Page404';
 
-// delay the class change to see the animation
 
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   useEffect(() => {
     setTimeout(() => {
